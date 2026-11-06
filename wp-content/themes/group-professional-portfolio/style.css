@@ -1,0 +1,85 @@
+/*
+Theme Name: Group Professional Portfolio
+Theme URI: https://example.com/
+Author: Your Group
+Description: A responsive group portfolio theme with four member profiles.
+Version: 1.0.0
+Text Domain: group-professional-portfolio
+*/
+
+/* =========================================
+   01. GLOBAL VARIABLES
+========================================= */
+
+:root {
+  --gpp-ink: #000000;
+  --gpp-muted: #555555;
+
+  --gpp-primary: #830000;
+  --gpp-primary-dark: #000000;
+
+  --gpp-accent: #bc0202;
+  --gpp-highlight: #ff0000;
+
+  --gpp-surface: #ffffff;
+  --gpp-soft: #f7f2f2;
+  --gpp-border: #e5cccc;
+
+  --gpp-radius: 20px;
+}
+
+/* =========================================
+   02. GLOBAL RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--gpp-ink);
+  background: var(--gpp-soft);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   03. GLOBAL CONTAINER
+========================================= */
+
+.gpp-container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================================
+   04. GLOBAL RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+  .gpp-container {
+    width: min(100% - 28px, 1120px);
+  }
+}

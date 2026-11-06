@@ -1,0 +1,240 @@
+/* =========================================
+   GROUP PROFESSIONAL PORTFOLIO
+   HOMEPAGE FOOTER STYLESHEET
+========================================= */
+
+/* =========================================
+   01. FOOTER MAIN
+========================================= */
+
+.gpp-footer {
+  padding: 75px 0 0;
+  color: #ffffff;
+  background: #080808;
+  border-top: 4px solid var(--gpp-primary);
+}
+
+.gpp-footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 0.9fr 1.2fr;
+  gap: 45px;
+  padding-bottom: 60px;
+}
+
+/* =========================================
+   02. FOOTER COLUMNS
+========================================= */
+
+.gpp-footer-column h3 {
+  margin: 0 0 23px;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 850;
+}
+
+.gpp-footer-column p {
+  margin: 18px 0;
+  color: #a9a9a9;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+/* =========================================
+   03. FOOTER BRAND
+========================================= */
+
+.gpp-footer-brand {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+}
+
+.gpp-footer-brand span {
+  color: var(--gpp-highlight);
+}
+
+.gpp-footer-course {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 7px 11px;
+  color: #ff5555;
+  background: rgba(188, 2, 2, 0.15);
+  border: 1px solid rgba(188, 2, 2, 0.35);
+  border-radius: 5px;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================
+   04. FOOTER LINKS
+========================================= */
+
+.gpp-footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gpp-footer-column ul li {
+  color: #a9a9a9;
+  font-size: 0.88rem;
+}
+
+.gpp-footer-column ul a {
+  color: #a9a9a9;
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.gpp-footer-column ul a:hover {
+  padding-left: 5px;
+  color: var(--gpp-highlight);
+}
+
+/* =========================================
+   05. CONTACT INFORMATION
+========================================= */
+
+.gpp-footer-contact-list li span {
+  display: block;
+  margin-bottom: 4px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.gpp-footer-contact-list li p {
+  margin: 0;
+}
+
+.gpp-footer-contact-list li a {
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   06. SOCIAL LINKS
+========================================= */
+
+.gpp-footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.gpp-footer-socials a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background: #1d1d1d;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.gpp-footer-socials a:hover {
+  transform: translateY(-4px);
+  background: var(--gpp-primary);
+  border-color: var(--gpp-highlight);
+}
+
+/* =========================================
+   07. FOOTER BOTTOM
+========================================= */
+
+.gpp-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 23px 0;
+  border-top: 1px solid #292929;
+}
+
+.gpp-footer-bottom p {
+  margin: 0;
+  color: #858585;
+  font-size: 0.82rem;
+}
+
+.gpp-footer-credit {
+  color: #b0b0b0 !important;
+}
+
+/* =========================================
+   08. RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .gpp-footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+}
+
+/* =========================================
+   09. RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .gpp-footer {
+    padding-top: 55px;
+  }
+
+  .gpp-footer-main {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-bottom: 40px;
+  }
+
+  .gpp-footer-column {
+    max-width: 100%;
+  }
+
+  .gpp-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.gpp-footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gpp-footer-socials a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.gpp-footer-socials a:hover {
+    background: #d70606;
+    color: #ffffff;
+    transform: translateY(-4px);
+}

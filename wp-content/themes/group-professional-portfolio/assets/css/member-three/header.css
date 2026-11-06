@@ -1,0 +1,159 @@
+
+/* MEMBER 1 - HEADER DESIGN */
+
+.member-portfolio-shell {
+    --member-accent: #7774f5;
+    --member-ink: #17182b;
+    --member-muted: #73758a;
+    color: var(--member-ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.member-portfolio-shell * {
+    box-sizing: border-box;
+}
+
+/* FIXED HEADER */
+.member-header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background: rgba(255, 255, 255, .97);
+    border-bottom: 1px solid #ececf4;
+    box-shadow: 0 3px 12px rgba(23, 24, 43, .06);
+}
+
+/* HEADER INNER */
+.member-header-inner {
+    width: min(1160px, calc(100% - 44px));
+    min-height: 78px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* BRAND */
+.member-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: var(--member-ink);
+    font-size: .9rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-decoration: none;
+}
+
+.member-brand strong {
+    color: var(--member-accent);
+}
+
+.member-brand-mark {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--member-ink);
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* NAVIGATION */
+.member-nav {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    color: #65677c;
+    font-size: .88rem;
+    font-weight: 650;
+}
+
+.member-nav a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+.member-nav a:hover {
+    color: var(--member-accent);
+}
+
+.member-nav .member-nav-home {
+    padding: 10px 15px;
+    border: 1px solid #deddfb;
+    border-radius: 999px;
+    color: var(--member-accent);
+}
+
+/* MOBILE MENU BUTTON */
+.member-menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.member-menu-toggle span {
+    display: block;
+    width: 23px;
+    height: 2px;
+    margin: 5px;
+    background: var(--member-ink);
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:760px) {
+
+    .member-header-inner {
+        min-height: 68px;
+    }
+
+    .member-menu-toggle {
+        display: block;
+    }
+
+    .member-nav {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        padding: 20px 24px;
+        background: #fff;
+        border-bottom: 1px solid #ececf4;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 17px;
+        box-shadow: 0 8px 12px rgba(23, 24, 43, .06);
+    }
+
+    .member-nav.is-open {
+        display: flex;
+    }
+
+    .member-nav .member-nav-home {
+        text-align: center;
+    }
+}
+
+/* PREVENT CONTENT FROM HIDING UNDER HEADER */
+.member-main {
+    padding-top: 78px;
+}
+
+/* SMOOTH NAVIGATION */
+html {
+    scroll-behavior: smooth;
+}
+
+/* SECTION SCROLL OFFSET */
+.member-main section {
+    scroll-margin-top: 90px;
+}

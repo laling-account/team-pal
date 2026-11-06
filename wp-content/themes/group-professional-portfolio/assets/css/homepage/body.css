@@ -1,0 +1,961 @@
+/* =========================================
+   GROUP PROFESSIONAL PORTFOLIO
+   HOMEPAGE BODY STYLESHEET
+========================================= */
+
+/* =========================================
+   01. GLOBAL HOMEPAGE SETTINGS
+========================================= */
+
+.gpp-homepage {
+  overflow: hidden;
+}
+
+.gpp-homepage section {
+  position: relative;
+}
+
+.gpp-homepage .gpp-section {
+  padding: 100px 0;
+}
+
+.gpp-section-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--gpp-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.gpp-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.gpp-section-heading h2 {
+  margin: 0 0 14px;
+  color: var(--gpp-ink);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 850;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+
+.gpp-section-heading p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--gpp-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   02. BUTTON STYLES
+========================================= */
+
+.gpp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 25px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 750;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.gpp-btn:hover {
+  transform: translateY(-3px);
+}
+
+.gpp-btn-primary {
+  color: #ffffff;
+  background: var(--gpp-primary);
+  border-color: var(--gpp-primary);
+  box-shadow: 0 8px 22px rgba(131, 0, 0, 0.18);
+}
+
+.gpp-btn-primary:hover {
+  color: #ffffff;
+  background: var(--gpp-highlight);
+  border-color: var(--gpp-highlight);
+  box-shadow: 0 12px 25px rgba(146, 12, 12, 0.2);
+}
+
+.gpp-btn-outline {
+  color: #ffffff;
+  background: var(--gpp-primary);
+  border-color: var(--gpp-primary);
+  box-shadow: 0 8px 22px rgba(131, 0, 0, 0.18);
+}
+
+.gpp-btn-outline:hover {
+  color: #ffffff;
+  background: var(--gpp-highlight);
+  border-color: var(--gpp-highlight);
+  box-shadow: 0 12px 25px rgba(146, 12, 12, 0.2);
+}
+
+/* =========================================
+   03. HERO SECTION
+========================================= */
+
+.gpp-hero {
+  display: flex;
+  align-items: center;
+  min-height: 680px;
+  padding: 110px 0 90px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(188, 2, 2, 0.32), transparent 35%),
+    radial-gradient(circle at 10% 90%, rgba(131, 0, 0, 0.3), transparent 35%),
+    linear-gradient(135deg, #000000 0%, #1b0000 55%, #480000 100%);
+}
+
+.gpp-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    transparent 48%,
+    rgba(255, 0, 0, 0.07) 49%,
+    rgba(255, 0, 0, 0.07) 50%,
+    transparent 51%
+  );
+  background-size: 35px 35px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.gpp-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.gpp-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 9px 16px;
+  color: #ffffff;
+  background: rgba(188, 2, 2, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.45);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.gpp-typing-text {
+  display: inline-block;
+  width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #ff0000;
+  animation: gpp-blink-cursor 0.7s step-end infinite;
+}
+.gpp-typing-text.is-typing {
+  animation:
+    gpp-type-text 4s steps(55, end) forwards,
+    gpp-blink-cursor 0.7s step-end infinite;
+}
+@keyframes gpp-type-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--gpp-typing-width);
+  }
+}
+@keyframes gpp-blink-cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.gpp-hero h1 {
+  max-width: 900px;
+  margin: 28px auto 22px;
+  color: #ffffff;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.065em;
+}
+
+.gpp-hero h1 span {
+  color: var(--gpp-highlight);
+}
+
+.gpp-hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.gpp-hero-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+/* HERO STATISTICS */
+
+.gpp-hero-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 65px;
+  margin-top: 75px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.gpp-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.gpp-stat strong {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.gpp-stat span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.83rem;
+}
+
+/* =========================================
+   04. ABOUT OUR GROUP SECTION
+========================================= */
+
+.gpp-about {
+  background: #ffffff;
+}
+
+.gpp-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.gpp-about-content h2 {
+  margin: 0 0 25px;
+  color: var(--gpp-ink);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -0.05em;
+}
+
+.gpp-about-content h2 span {
+  color: var(--gpp-primary);
+}
+
+.gpp-about-content p {
+  margin: 0 0 18px;
+  color: var(--gpp-muted);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.gpp-text-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--gpp-primary);
+  font-size: 0.95rem;
+  font-weight: 800;
+  transition: color 0.2s ease;
+}
+
+.gpp-text-link:hover {
+  color: var(--gpp-highlight);
+}
+
+/* ABOUT HIGHLIGHT CARDS */
+
+.gpp-about-highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gpp-about-card {
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+  background: #fffafa;
+  border: 1px solid var(--gpp-border);
+  border-left: 5px solid var(--gpp-primary);
+  border-radius: 14px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.gpp-about-card:hover {
+  transform: translateX(7px);
+  box-shadow: 0 12px 30px rgba(131, 0, 0, 0.09);
+}
+
+.gpp-about-number {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--gpp-accent);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.gpp-about-card h3 {
+  margin: 0 0 10px;
+  color: var(--gpp-ink);
+  font-size: 1.3rem;
+}
+
+.gpp-about-card p {
+  margin: 0;
+  color: var(--gpp-muted);
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   05. TEAM MEMBERS SECTION
+========================================= */
+
+.gpp-team {
+  background: var(--gpp-soft);
+}
+
+.gpp-team .gpp-section-heading {
+  margin-bottom: 50px;
+}
+
+/* MEMBER GRID */
+
+.gpp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* MEMBER CARD */
+
+.gpp-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 340px;
+  padding: 28px 24px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--gpp-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.035);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gpp-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gpp-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.gpp-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gpp-accent);
+  box-shadow: 0 18px 40px rgba(131, 0, 0, 0.12);
+}
+
+.gpp-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* MEMBER AVATAR */
+
+.gpp-avatar {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  overflow: hidden;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--gpp-primary), var(--gpp-highlight));
+  border-radius: 18px;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.gpp-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MEMBER DETAILS */
+
+.gpp-card h3 {
+  margin: 22px 0 6px;
+  color: var(--gpp-ink);
+  font-size: 1.2rem;
+  font-weight: 850;
+  line-height: 1.3;
+}
+
+.gpp-role {
+  margin-bottom: 13px;
+  color: var(--gpp-primary);
+  font-size: 0.84rem;
+  font-weight: 750;
+}
+
+.gpp-card p {
+  margin: 0;
+  color: var(--gpp-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.gpp-card-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 25px;
+  color: var(--gpp-primary);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.gpp-card-link span {
+  transition: transform 0.25s ease;
+}
+
+.gpp-card:hover .gpp-card-link span {
+  transform: translateX(6px);
+}
+
+/* =========================================
+   06. EXPERTISE SECTION
+========================================= */
+
+.gpp-expertise {
+  background: #ffffff;
+}
+
+.gpp-expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.gpp-expertise-card {
+  padding: 32px 28px;
+  background: #ffffff;
+  border: 1px solid var(--gpp-border);
+  border-radius: 15px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.gpp-expertise-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gpp-accent);
+  box-shadow: 0 15px 35px rgba(131, 0, 0, 0.09);
+}
+
+.gpp-expertise-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 22px;
+  color: #ffffff;
+  background: var(--gpp-primary);
+  border-radius: 13px;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.gpp-expertise-card h3 {
+  margin: 0 0 12px;
+  color: var(--gpp-ink);
+  font-size: 1.2rem;
+  font-weight: 850;
+}
+
+.gpp-expertise-card p {
+  margin: 0 0 20px;
+  color: var(--gpp-muted);
+  font-size: 0.93rem;
+  line-height: 1.8;
+}
+
+.gpp-expertise-card > span {
+  display: block;
+  padding-top: 15px;
+  color: var(--gpp-primary);
+  border-top: 1px solid var(--gpp-border);
+  font-size: 0.76rem;
+  font-weight: 800;
+  line-height: 1.7;
+}
+
+/* =========================================
+   07. FEATURED PROJECTS SECTION
+========================================= */
+
+.gpp-projects {
+  background: var(--gpp-soft);
+}
+
+.gpp-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.gpp-project-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--gpp-border);
+  border-radius: 16px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gpp-project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(131, 0, 0, 0.1);
+}
+
+/* PROJECT VISUAL */
+
+.gpp-project-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 210px;
+  padding: 25px;
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 0, 0.4), transparent 40%),
+    linear-gradient(135deg, #000000, #590000);
+}
+
+.gpp-project-visual::after {
+  content: "";
+  position: absolute;
+  right: -45px;
+  bottom: -85px;
+  width: 200px;
+  height: 200px;
+  border: 30px solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+}
+
+.gpp-project-visual span {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.gpp-project-visual strong {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 3.7rem;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+/* PROJECT CONTENT */
+
+.gpp-project-content {
+  padding: 27px;
+}
+
+.gpp-project-category {
+  color: var(--gpp-accent);
+  font-size: 0.73rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.gpp-project-content h3 {
+  margin: 12px 0;
+  color: var(--gpp-ink);
+  font-size: 1.25rem;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.gpp-project-content p {
+  margin: 0;
+  color: var(--gpp-muted);
+  font-size: 0.91rem;
+  line-height: 1.8;
+}
+
+/* PROJECT TECHNOLOGY TAGS */
+
+.gpp-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.gpp-project-tags span {
+  padding: 6px 11px;
+  color: var(--gpp-primary);
+  background: #fff0f0;
+  border: 1px solid #f1d0d0;
+  border-radius: 5px;
+  font-size: 0.73rem;
+  font-weight: 800;
+}
+
+/* =========================================
+   08. CONTACT SECTION
+========================================= */
+
+.gpp-contact {
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(255, 0, 0, 0.25), transparent 35%),
+    linear-gradient(135deg, #000000, #360000);
+}
+
+.gpp-contact-content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gpp-contact .gpp-section-label {
+  color: #ff4444;
+}
+
+.gpp-contact h2 {
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+}
+
+.gpp-contact h2 span {
+  color: var(--gpp-highlight);
+}
+
+.gpp-contact-content > p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.gpp-contact .gpp-btn {
+  margin-top: 30px;
+}
+
+.gpp-contact .gpp-contact-email {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.88rem;
+}
+
+/* =========================================
+   09. EMPTY MEMBER STATE
+========================================= */
+
+.gpp-empty {
+  padding: 40px 25px;
+  color: var(--gpp-muted);
+  background: #ffffff;
+  border: 1px dashed var(--gpp-border);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.gpp-empty strong {
+  color: var(--gpp-primary);
+}
+
+/* =========================================
+   10. ACCESSIBILITY & INTERACTION
+========================================= */
+
+.gpp-homepage a:focus-visible {
+  outline: 3px solid var(--gpp-highlight);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gpp-homepage *,
+  .gpp-homepage *::before,
+  .gpp-homepage *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================
+   11. RESPONSIVE DESIGN - TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .gpp-about-grid {
+    gap: 45px;
+  }
+
+  .gpp-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gpp-expertise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gpp-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   12. RESPONSIVE DESIGN - SMALL TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .gpp-homepage .gpp-section {
+    padding: 75px 0;
+  }
+
+  .gpp-hero {
+    min-height: auto;
+    padding: 100px 0 75px;
+  }
+
+  .gpp-hero-stats {
+    gap: 35px;
+  }
+
+  .gpp-about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .gpp-about-content {
+    text-align: center;
+  }
+
+  .gpp-about-highlight {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .gpp-section-heading {
+    margin-bottom: 40px;
+  }
+}
+
+/* =========================================
+   13. RESPONSIVE DESIGN - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .gpp-homepage .gpp-section {
+    padding: 60px 0;
+  }
+
+  /* HERO */
+
+  .gpp-hero {
+    padding: 80px 0 60px;
+  }
+
+  .gpp-eyebrow {
+    max-width: 100%;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+  }
+
+  .gpp-hero h1 {
+    margin-top: 25px;
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+  }
+
+  .gpp-hero p {
+    font-size: 0.95rem;
+  }
+
+  .gpp-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .gpp-btn {
+    width: 100%;
+  }
+
+  .gpp-hero-stats {
+    gap: 25px;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-top: 28px;
+  }
+
+  .gpp-stat strong {
+    font-size: 1.55rem;
+  }
+
+  .gpp-stat span {
+    font-size: 0.72rem;
+  }
+
+  /* SECTION HEADINGS */
+
+  .gpp-section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .gpp-section-heading p {
+    font-size: 0.9rem;
+  }
+
+  /* ABOUT */
+
+  .gpp-about-content h2 {
+    font-size: 2.35rem;
+  }
+
+  .gpp-about-content p {
+    font-size: 0.93rem;
+  }
+
+  .gpp-about-card {
+    padding: 24px;
+  }
+
+  /* TEAM */
+
+  .gpp-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .gpp-card {
+    min-height: 290px;
+    padding: 25px;
+  }
+
+  /* EXPERTISE */
+
+  .gpp-expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gpp-expertise-card {
+    padding: 25px;
+  }
+
+  /* PROJECTS */
+
+  .gpp-project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gpp-project-visual {
+    min-height: 180px;
+  }
+
+  .gpp-project-content {
+    padding: 23px;
+  }
+
+  /* CONTACT */
+
+  .gpp-contact h2 {
+    font-size: 2.25rem;
+  }
+
+  .gpp-contact-content > p {
+    font-size: 0.92rem;
+  }
+}
+
+/* =========================================
+   14. EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .gpp-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .gpp-hero-stats {
+    gap: 15px;
+  }
+
+  .gpp-stat strong {
+    font-size: 1.35rem;
+  }
+
+  .gpp-stat span {
+    font-size: 0.65rem;
+  }
+}
