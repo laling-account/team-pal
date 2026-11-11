@@ -58,3 +58,6 @@ DASH BOARD
 Have a project or idea to share with us?
 We are always open to learning opportunities, collaboration, and meaningful conversations about technology and development.
 Contact Our Group
+
+Connect With Us
+Have questions, ideas, or collaboration opportunities? Feel free to reach out to our group.
