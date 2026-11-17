@@ -1,63 +1,50 @@
-Welcome to our Page.
-We are TEAM PAL.
-Our team is composed of individuals with different skills, knowledge, and responsibilities who share one common goal: to create a system that can help improve tourism information management, visitor monitoring, and reporting.
+# TEAM PAL: Group Professional Portfolio
 
-ABOUT US
-Working Together,
-Building Innovation.
-We are four Bachelor of Science in Information Technology students working together to develop our technical knowledge, creativity, and problem-solving abilities.
-Through teamwork, collaboration, and the use of technology, we aim to develop a system that provides useful information for tourists and supports tourism personnel in managing visitor-related records and reports.
+A custom WordPress theme for **TEAM PAL**, a group of four BS Information Technology students. The site presents our team, skills, and projects in one professional portfolio, and gives each member their own portfolio page.
 
-Our Core Values
+## About the Website
 
-Teamwork
-Working together and supporting one another to achieve our project goals.
+Our team has different skills and responsibilities but one shared goal: to build systems that help manage information and improve everyday processes, including tourism information management, visitor monitoring, and reporting. This website is where we show who we are and what we have built.
 
-Responsibility
-Completing assigned tasks and fulfilling our responsibilities as team members.
+## Pages and Sections
 
-Our Team Members
-Four individuals, different strengths, and one shared goal. Select a profile to explore each member's portfolio.
-Crislyn P. Dablio 
-Technical Writer
-Evan Jester Z. Fabria 
-Project Manager
-Dongards B. Mabao 
-Programmer
-Norlyn M. Teves 
-System Analyst
+The homepage has six sections:
 
-A Few Things We're Good At
-Our team brings together different skills and abilities that help us plan, design, and document.
+- **Home:** a welcome introduction of our team.
+- **About Us:** who we are and our core values, Teamwork and Responsibility.
+- **Our Team Members:** a card for each member. Clicking a card opens that member's own portfolio page.
+- **Our Expertise:** the skills we bring together: team management, documentation, programming, system analysis, creative design, and communication.
+- **Featured Projects:** a sample systems we have built.
+- **Contact:** a button and email address for reaching the group.
 
-Team Management
-Organizing tasks, managing time, and working together to achieve our goals.
+## Member Portfolio Pages
 
-Documentation
-Writing, organizing, and preparing project documents and reports.
+Each member has an individual page (for example, `/members/member-one/`) showing their name, photo, role, about me, education, skills, projects, and contact details. Members are managed in the WordPress dashboard under **Portfolio Members**, so the team can update their own information without editing code.
 
-Programming
-Creating system functions, designing interfaces, and managing databases.
+## Featured Projects
 
-System Analysis
-Understanding user needs, analyzing requirements, and planning system processes.
+| Project | Type | Technologies |
+| --- | --- | --- |
+| Car Detailing Management System | Web and mobile application | Laravel, React, MySQL |
+| Integrated Tourist Management System for LGUs | Web and mobile application | React Native, Laravel, MySQL |
+| Air Humidity Monitoring | IoT and mobile application | Blynk IoT, Arduino, ESP32 |
 
-Creative Design
-Creating clean, user-friendly, and organized system interfaces.
+## Built With
 
-Communication
-Sharing ideas, discussing solutions, and collaborating as a team.
+- WordPress (custom theme)
+- PHP
+- HTML, CSS, and JavaScript
+- WordPress custom post type for member profiles
 
-Featured Projects
-A selection of sample academic and development projects that demonstrate our interests and technical skills.
+## The Team
 
-WEB & MOBILE
-CAPSTONE SYSTEM
-DASH BOARD
+| Member | Role |
+| --- | --- |
+| Crislyn P. Dablio | Technical Writer |
+| Evan Jester Z. Fabria | Project Manager |
+| Dongards B. Mabao | Programmer |
+| Norlyn M. Teves | System Analyst |
 
-Have a project or idea to share with us?
-We are always open to learning opportunities, collaboration, and meaningful conversations about technology and development.
-Contact Our Group
+## Contact
 
-Connect With Us
-Have questions, ideas, or collaboration opportunities? Feel free to reach out to our group.
+Email: force.queen18@gmail.com
