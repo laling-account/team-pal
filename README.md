@@ -1,4 +1,4 @@
-# TEAM PAL: Group Professional Portfolio
+# TEAM PAL: Group Portfolio
 
 A custom WordPress theme for **TEAM PAL**, a group of four BS Information Technology students. The site presents our team, skills, and projects in one professional portfolio, and gives each member their own portfolio page.
 
